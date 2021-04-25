@@ -6,6 +6,7 @@
       <p @click="goToMovie" class="nav-button">Movie</p>
       <p @click="goToUsers" class="nav-button">Users</p>
       <p @click="goToPage" class="nav-button">Page</p>
+      <p @click="goToCounter" class="nav-button">Counter</p>
     </div>
   </div>
 </template>
@@ -29,11 +30,14 @@ export default {
         
         const goToPage = () => router.push('/page', () => {})
 
+        const goToCounter = () => router.push('/counter', () => {})
+
         return {
             goToHome,
             goToPage,
             goToMovie,
-            goToUsers
+            goToUsers,
+            goToCounter
         }
         
     },

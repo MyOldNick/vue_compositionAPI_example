@@ -4,6 +4,7 @@ import Home from "../pages/Home.vue";
 import Users from "../pages/Users.vue";
 import Movie from "../pages/Movie.vue";
 import Page from "../pages/Page.vue";
+import Counter from '../pages/Counter.vue'
 
 const routes = [
   {
@@ -29,6 +30,12 @@ const routes = [
     name: "page",
     component: Page,
   },
+
+  {
+    path: '/counter',
+    name: 'counter',
+    component: Counter,
+  }
 ];
 
 const router = createRouter({
